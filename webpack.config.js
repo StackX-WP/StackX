@@ -15,7 +15,7 @@ module.exports = {
     )],
   devServer: {
     static: {
-      // publicPath: '/build',
+      publicPath: '/dist',
       directory: path.join(__dirname, './dist'),
     }, 
     proxy: {
