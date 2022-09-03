@@ -36,6 +36,12 @@ module.exports = {
         }
       },
       {
+        test: /\.jpeg/,
+        use: {
+          loader: 'file-loader'
+        }
+      },
+      {
         test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
         use: [
