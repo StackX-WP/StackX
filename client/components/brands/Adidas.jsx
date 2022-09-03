@@ -3,9 +3,7 @@ import { render } from 'react';
 import { adidasShoes } from '../data';
 
 const Adidas = () => {
-    // render(
-
-    // )
+    
     return(
         <div>
             <div className='adidasBanner'>
