@@ -13,6 +13,14 @@
     display: flex;
     padding: 20px;
     justify-content: space-between;
+    margin: 3px;
+    height: 25vh; 
+
+    img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
 }
 
 .homeImage {
@@ -27,5 +35,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+#banner {
+    text-align: center;
+}
+
+.Brandcontainers {
+    display: flex;
+    justify-content: space-between;
 }
 
