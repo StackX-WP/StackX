@@ -1,8 +1,6 @@
 import React from 'react';
 import { categories } from './data';
 
-
-
 const Home = () => {
     return(
         <div>
