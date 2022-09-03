@@ -15,11 +15,11 @@ module.exports = {
     )],
   devServer: {
     static: {
-      // publicPath: '/build',
+      publicPath: '/dist',
       directory: path.join(__dirname, './dist'),
     }, 
     proxy: {
-      '/': 'http://localhost:3000',
+      '/api': 'http://localhost:3000',
     },
   }, 
   mode: process.env.NODE_ENV,
@@ -33,6 +33,12 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
+        }
+      },
+      {
+        test: /\.jpeg/,
+        use: {
+          loader: 'file-loader'
         }
       },
       {
