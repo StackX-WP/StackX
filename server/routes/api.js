@@ -12,4 +12,8 @@ router.get('/brands/:brand',
   (req, res) => res.status(200).json(res.locals.data.rows)
 );
 
+router.get('/shoes/:id',
+  controller.getShoeById,
+  (req, res) => res.status(200).json(res.locals.data.rows[0])
+);
 module.exports = router;

@@ -32,6 +32,21 @@ controller.getShoesByBrand = (req, res, next) => {
     })
 }
 
+controller.getShoeById = (req, res, next) => {
+  const values = [req.params.id];
+  const query = 'SELECT * from product p WHERE p.productid = $1'
+  db.query(query, values)
+    .then((data) => {
+      res.locals.data = data;
+      return next();
+    })
+    .catch(() => {
+      const err = {
+        log: 'Failed to get shoes by brand from internal api',
+        message: { err: 'An error occurred' },}
+    })
+}
+
 
 module.exports = controller;
 
