@@ -44,15 +44,19 @@ class App extends Component {
     render() {
         return(
             <BrowserRouter>
-                <nav>
-                    <Link className='headers' to="/">Home</Link>
-                    <Link className='headers' to="/adidas">Adidas</Link>
-                    <Link className='headers' to="/nike">Nike</Link>
-                    <Link className='headers' to="/jordan">Jordan</Link>
-                    <Link className='headers' to="/newbalance">New Balance</Link>
-                    <Link className='headers' to="/balenciaga">Balenciaga</Link>
-                    <Link className='headers' to="/shoppingcart">Cart ({Object.keys(this.state.cart).length})</Link>
-                </nav>
+                <navbar>
+                    <div className='left'>
+                        <Link id='headers' style={{color: 'black'}} to="/">OCTOSHOES</Link>
+                        <Link id='headers' to="/adidas">Adidas</Link>
+                        <Link id='headers' to="/nike">Nike</Link>
+                        <Link id='headers' to="/jordan">Jordan</Link>
+                        <Link id='headers' to="/newbalance">New Balance</Link>
+                        <Link id='headers' to="/balenciaga">Balenciaga</Link>
+                    </div>
+                    <div className='right'>
+                        <Link id='headers' to="/shoppingcart">Cart ({Object.keys(this.state.cart).length})</Link>
+                    </div>
+                </navbar>
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/adidas" element={<Adidas addToCart={this.addToCart}/>}></Route>

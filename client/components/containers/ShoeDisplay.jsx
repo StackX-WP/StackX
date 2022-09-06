@@ -17,13 +17,14 @@ class ShoeDisplay extends Component {
       return () => this.props.addToCart(productid);
     }
     return (
-      <div>
-        <img src={imgurl} style={{height: "100px", width: "100px"}}/>
-        <p>Name: {this.props.shoe.name}</p>
-        <p>Size: {this.props.shoe.size}</p>
-        <p>Price: ${this.props.shoe.price}</p>
-        <button onClick={handleClick(productid)}>Add to Cart</button> 
-          
+      <div className='shoesBox'>
+        <img src={imgurl} style={{height: "200px", width: "200px"}}/>
+        <p><b>Name:</b> {this.props.shoe.name}</p>
+        <p><b>Size:</b> {this.props.shoe.size}</p>
+        <p><b>Price:</b> ${this.props.shoe.price}</p>
+        <button onClick={handleClick(productid)}
+        style={{}}
+        >Add to Cart</button>     
       </div>
     )
   }
