@@ -1,12 +1,22 @@
-// body {
-//     align-items: center;
-//     display: center;
-// }
+body {
+    background-color: rgb(241, 244, 248);
+}
 
-.headers {
+navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headers {
     margin: 10px; 
     font-size: 30px;
     text-decoration: none;
+    color: dimgray;
+    margin-right: 10px;
+}
+
+#headers:hover {
+    color: black;
 }
 
 .homeAds {
@@ -41,8 +51,9 @@
     text-align: center;
 }
 
-.Brandcontainers {
-    display: flex;
-    justify-content: space-between;
+.shoesBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
 }
 

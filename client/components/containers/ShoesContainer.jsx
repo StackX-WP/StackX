@@ -25,11 +25,14 @@ class ShoesContainer extends Component {
     render() {
       const displays = [];
       this.state.shoes.forEach(shoe => {
-        displays.push(<ShoeDisplay shoe={shoe} pictures={this.props.pictures} addToCart={this.props.addToCart}/>)
+        displays.push(<ShoeDisplay shoe={shoe} 
+          pictures={this.props.pictures} 
+          addToCart={this.props.addToCart}
+          />)
         // console.log(displays);
       })
       return(
-        <div className='Brandcontainers'>
+        <div className='shoesBoxes'>
           {displays}
         </div>
       )
