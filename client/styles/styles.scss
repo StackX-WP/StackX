@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(241, 244, 248);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headers {
+    margin: 10px; 
+    font-size: 30px;
+    text-decoration: none;
+    color: dimgray;
+    margin-right: 10px;
+}
+
+#headers:hover {
+    color: black;
+}
+
+.homeAds {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 3px;
+    height: 25vh; 
+
+    img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+}
+
+.homeImage {
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+    color: black; 
+
+    p {
+        position: absolute; 
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#banner {
+    text-align: center;
+}
+
+.shoesBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+.shoeButton {
+    border-radius: 10px;
+    background-color: none;
+    color: dimgray;
+}
+
+.shoeButton:hover {
+    color: black;
+}
+
+.removeButton {
+    border-radius: 10px;
+    color: dimgray;
+}
+
+.removeButton:hover {
+    color: red;
+}
+
+#shoppingcart {
+    border: solid black;
+    padding-bottom: 5px;
+    // background-image: url('https://i.pinimg.com/236x/b2/c7/3f/b2c73f15cba5e0af96b9a4c56feba8a9.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: #EEE3CB
+}
+
+
+.purchaseButton {
+    border-radius:10px;
+    color: dimgray;
+}
+
+.purchaseButton:hover {
+    color:#34eb13;
+}
