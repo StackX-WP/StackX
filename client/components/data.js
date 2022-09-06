@@ -13,7 +13,7 @@ export const categories = [
     },
 ];
 
-const images = {}
+const images = {};
 
 images.adidas = {
     Ultraboost: 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cdb8ed0f18904d0f89b6ae37016b194c_9366/Ultraboost_DNA_Climacool_Shoes_White_GV8761_01_standard.jpg',
@@ -21,13 +21,13 @@ images.adidas = {
     Slides: 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3723be3685ec476aaed0a991001b1389_9366/Adilette_Aqua_Slides_Blue_F35542_01_standard.jpg',
     'Stan Smith': 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1a4ea8a5e69142ceb482ac5a00dd9db6_9366/Stan_Smith_Shoes_White_Q47224_01_standard.jpg',
     Superstar: 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_FV3284_01_standard.jpg',
-    Powerphase: 'https://cdn.flightclub.com/1500/TEMPLATE/802801/1.jpg',
-    'Adidas Yeezy 350': 'https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwc01df2fd/product_images/0550603440146NEW_00_165.jpg?sw=800',
-    'Adios pro 2.0 tme (Addy shoe)': 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/65ba1bef35c24e0ab8d8ae9300f4176c_9366/Adios_Pro_2.0_TME_Shoes_White_GX9300_01_standard.jpg',
+    Ozelia: 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b701ab2421874c009519aeb500491ba7_9366/OZELIA_Shoes_White_GY1561_01_standard.jpg',
+    'Adios pro 2.0 tme': 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/65ba1bef35c24e0ab8d8ae9300f4176c_9366/Adios_Pro_2.0_TME_Shoes_White_GX9300_01_standard.jpg',
+    'Yeezy boost 380 Infants Mist (Addy shoe)': 'https://assets.adidas.com/images/w_840,h_840,q_auto:sensitive/db72a2f8cddb4750b36cab7c016daabc_9366/FX9766_01_standard.jpg',
 }
-        
+       
 images.Jordan = {
-    'Jordan 11 bred': 'https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw26c9d737/product_images/0550603440168NEW_00_774.jpg?sw=400',
+    'Jordan 11 bred': 'https://cdn.flightclub.com/TEMPLATE/152814/2.jpg',
     'Jordan 3 black cement': 'https://images.stockx.com/images/Air-Jordan-3-Retro-Black-Cement-2018-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1609356781',
     'Jordan 4 bred black cement': 'https://cdn.flightclub.com/TEMPLATE/139813/2.jpg',
     'Jordan 5 retro off white': 'https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/043/946/378/original/662236_01.jpg.jpeg?action=crop&width=950',
@@ -38,14 +38,14 @@ images.Jordan = {
 }
 
 images['New Balance'] = {
-    'New Balance 2002r': 'https://nb.scene7.com/is/image/NB/ms237gd_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600',
-    'New Balance 237v1': 'https://media.gq.com/photos/62d1a2c7a413d2c95a76b3fe/master/w_1280%2Cc_limit/product_xlarge.jpg',
+    'New Balance 2002r': 'https://nb.scene7.com/is/image/NB/m2002rth_nb_02_i?$pdpflexf22x$&fmt=webp&wid=944&hei=944',
+    'New Balance 237v1': 'https://nb.scene7.com/is/image/NB/ms237gd_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600',
     'New Balance 327': 'https://nb.scene7.com/is/image/NB/ms327bd_nb_02_i?$pdpflexf2$&wid=440&hei=440',
     'New Balance 574': 'https://nb.scene7.com/is/image/NB/pc574evg_nb_02_i?$pdpflexf2$&wid=440&hei=440',
     'New Balance 990v5': 'https://nb.scene7.com/is/image/NB/w990gl5_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600',
-    'New Balance 530': 'https://www.kosmosstore.com/10718-large_default/new-balance-m-991-ggt-made-in-uk-green-m991ggt.jpg',
-    'New Balance 991 GGT': 'https://i.ebayimg.com/images/g/9soAAOSw095i-wyC/s-l500.jpg',
-    'New Balance Fresh Foam x1080v12': 'https://nb.scene7.com/is/image/NB/m108012w_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600',
+    'New Balance 530': 'https://nb.scene7.com/is/image/NB/mr530ewb_nb_02_i?$pdpflexf2$&fmt=webp&wid=472&hei=472',
+    'New Balance 991 GGT ': 'https://nb.scene7.com/is/image/NB/m991ggt_nb_02_i?$pdpflexf22x$&fmt=webp&wid=944&hei=944',
+    'Fresh Foam x1080v12': 'https://nb.scene7.com/is/image/NB/m108012w_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600',
 }
 
 images.Nike = {
@@ -67,7 +67,7 @@ images.Balenciaga = {
     'Paris High Top Sneaker 750': 'https://balenciaga.dam.kering.com/m/29f6b2d057a3515e/eCom-688752W3RC49090_F.jpg?v=3',
     'Defender Sneaker': 'https://balenciaga.dam.kering.com/m/2808441dc02c51d9/Thumbnail-685611W2RA69700_F.jpg?v=4',
     'Pool Slide Black White': 'https://balenciaga.dam.kering.com/m/2c2af1aa7dd3f1f0/Medium-565826W1S889010_D.jpg?v=5',
-    'Triple S Sneaker Clear Sole': 'https://balenciaga.dam.kering.com/m/76493461febce818/eCom-544351W2FB19000_F.jpg?v=10'
+    'Triple S grey red blue': 'https://balenciaga.dam.kering.com/m/76493461febce818/eCom-544351W2FB19000_F.jpg?v=10'
 }
 
 

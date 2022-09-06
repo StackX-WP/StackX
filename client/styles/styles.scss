@@ -2,7 +2,7 @@ body {
     background-color: rgb(241, 244, 248);
 }
 
-navbar {
+nav {
     display: flex;
     justify-content: space-between;
 }
@@ -55,5 +55,35 @@ navbar {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+.shoeButton {
+    border-radius: 10px;
+    background-color: none;
+    color: dimgray;
+}
+
+.shoeButton:hover {
+    color: black;
+}
+
+.removeButton {
+    border-radius: 10px;
+    color: dimgray;
+}
+
+.removeButton:hover {
+    color: red;
+}
+
+#shoppingcart {
+    border: solid black;
+    padding-bottom: 5px;
+    // background-image: url('https://i.pinimg.com/236x/b2/c7/3f/b2c73f15cba5e0af96b9a4c56feba8a9.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: #EEE3CB
 }
 

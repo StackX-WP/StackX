@@ -7,7 +7,7 @@ class Jordan extends Component {
     return(
       <BrandPage brand='Jordan' 
       addToCart={this.props.addToCart} 
-      bannersrc='https://www.jordan11.shop/media/banner2.jpg'/>
+      bannersrc='https://kicksice.com/wp-content/uploads/2022/08/banner27-1400x512.jpg'/>
     )
   }
 }
