@@ -8,7 +8,6 @@ class ShoeDisplay extends Component {
     super(props);
   }
 
-
   render() {
     const imgurl = this.props.pictures[this.props.shoe.name];
     const { productid } = this.props.shoe;
@@ -22,13 +21,12 @@ class ShoeDisplay extends Component {
         <p><b>Name:</b> {this.props.shoe.name}</p>
         <p><b>Size:</b> {this.props.shoe.size}</p>
         <p><b>Price:</b> ${this.props.shoe.price}</p>
-        <button onClick={handleClick(productid)}
-        style={{}}
+        <button className='shoeButton' onClick={handleClick(productid)}
+        style={{textAlign: 'center'}}
         >Add to Cart</button>     
       </div>
     )
   }
-
 }
 
 export default ShoeDisplay;

@@ -7,7 +7,7 @@ class NewBalance extends Component {
     return(
       <BrandPage brand='New Balance' 
       addToCart={this.props.addToCart} 
-      bannersrc='https://file-uploads-cr.s3.amazonaws.com/newbalance_banner_1646167760976.jpeg'/>
+      bannersrc='https://m.media-amazon.com/images/S/aplus-media/vc/c6ea76a3-17f5-4fa6-b08b-91db1206c45c.__CR0,0,1464,600_PT0_SX1464_V1___.png'/>
     )
   }
 }

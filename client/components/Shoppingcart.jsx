@@ -18,7 +18,10 @@ class Shoppingcart extends Component{
         const { cart } = this.props;
         const cartItems = [];
         Object.keys(cart).forEach(productid => {
-            cartItems.push(<ShoppingContainer productid={productid} cart={cart} subtractFromCart={this.props.subtractFromCart}/>)
+            cartItems.push(<ShoppingContainer 
+                productid={productid} 
+                cart={cart} 
+                subtractFromCart={this.props.subtractFromCart}/>)
         })
         return(
             <div id='shoppingcart'>
