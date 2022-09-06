@@ -10,10 +10,10 @@ class ShoeDisplay extends Component {
 
   render() {
     const imgurl = this.props.pictures[this.props.shoe.name];
-    const { productid } = this.props.shoe;
-    const handleClick = (productid) => {
+    const { productid, price, name } = this.props.shoe;
+    const handleClick = (productid, price, name) => {
       // console.log(this.props.addToCart);
-      return () => this.props.addToCart(productid);
+      return () => this.props.addToCart(productid, price, name);
     }
     return (
       <div className='shoesBox'>
@@ -21,7 +21,7 @@ class ShoeDisplay extends Component {
         <p><b>Name:</b> {this.props.shoe.name}</p>
         <p><b>Size:</b> {this.props.shoe.size}</p>
         <p><b>Price:</b> ${this.props.shoe.price}</p>
-        <button className='shoeButton' onClick={handleClick(productid)}
+        <button className='shoeButton' onClick={handleClick(productid, price, name)}
         style={{textAlign: 'center'}}
         >Add to Cart</button>     
       </div>

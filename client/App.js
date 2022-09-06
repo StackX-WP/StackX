@@ -14,18 +14,22 @@ class App extends Component {
         super();
         this.addToCart = this.addToCart.bind(this);
         this.subtractFromCart = this.subtractFromCart.bind(this);
+        this.buyCart = this.buyCart.bind(this);
         this.state = {
             cart: {}
         }
     }
 
-    addToCart(id) {
-        console.log('running add to cart from', id);
+    addToCart(id, price, name) {
+        console.log('running add to cart from', id, 'with price of', price);
         const newCart = {...this.state.cart};
         if (!this.state.cart[id]) {
-            newCart[id] = 1;
+            newCart[id] = {}
+            newCart[id].quantity = 1;
+            newCart[id].price = price;
+            newCart[id].name = name;
         } else {
-            newCart[id] += 1;
+            newCart[id].quantity += 1;
         } 
         this.setState({cart: newCart});
     }
@@ -33,12 +37,19 @@ class App extends Component {
     subtractFromCart(id) {
         console.log('running subtract from cart from', id);
         const newCart = {...this.state.cart};
-        if (this.state.cart[id] === 1) {
+        if (this.state.cart[id].quantity === 1) {
             delete newCart[id]
+            console.log('newCart:', newCart);
         } else {
-            newCart[id] -= 1;
+            newCart[id].quantity -= 1;
         } 
         this.setState({cart: newCart});
+    }
+
+    buyCart() {
+        console.log('bought cart');
+        this.setState({cart: {}})
+        setTimeout(() => alert('Get scammed bozo'), 500);
     }
 
     render() {
@@ -64,7 +75,7 @@ class App extends Component {
                     <Route path="/jordan" element={<Jordan addToCart={this.addToCart}/>}></Route>
                     <Route path="/newbalance" element={<NewBalance addToCart={this.addToCart} />}></Route>
                     <Route path="/balenciaga" element={<Balenciaga addToCart={this.addToCart}/>}></Route>
-                    <Route path="/shoppingcart" element={<Shoppingcart cart={this.state.cart} subtractFromCart={this.subtractFromCart}/>}></Route>
+                    <Route path="/shoppingcart" element={<Shoppingcart cart={this.state.cart} subtractFromCart={this.subtractFromCart} buyCart={this.buyCart}/>}></Route>
                 </Routes>
             </BrowserRouter>
         );
